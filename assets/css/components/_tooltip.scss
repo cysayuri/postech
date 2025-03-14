@@ -1,0 +1,54 @@
+.tooltip {
+    padding: 5px;
+    width: fit-content;
+    
+    &__txt {
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
+        color: #000;
+        font-size: 14px;
+        font-weight: $medium;
+        max-width: 250px;
+        opacity: 0;
+        padding: 10px 16px;
+        transition: opacity .5s ease-in-out;
+        
+        &[data-show] {
+            opacity: 1;
+        }
+        
+        &[data-popper-placement^='top'] > .tooltip__arrow {
+            bottom: -4px;
+        }
+        
+        &[data-popper-placement^='bottom'] > .tooltip__arrow {
+            top: -4px;
+        }
+        
+        &[data-popper-placement^='left'] > .tooltip__arrow {
+            right: -4px;
+        }
+        
+        &[data-popper-placement^='right'] > .tooltip__arrow {
+            left: -4px;
+        }
+    }
+    
+    &__arrow {
+        background: inherit;
+        height: 8px;
+        visibility: hidden;
+        width: 8px;
+        
+        &::before {
+            background: inherit;
+            content: '';
+            height: 100%;
+            position: absolute;
+            transform: rotate(45deg);
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}

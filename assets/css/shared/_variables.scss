@@ -1,0 +1,43 @@
+/* ___ Fonts ___ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Margem';
+    src: url(../fonts/variable.woff2) format("woff2-variations");
+    font-weight: 100 750;
+}
+
+$font: 'Margem', 'Roboto', 'Calibri', 'sans-serif';
+ 
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 580;
+$bold: 750;
+
+
+/* ___ Colors ___ */
+$primary: #997FE3;
+$secondary: #6345BB;
+$tertiary: #EEE9FF;
+
+$black: #282828;
+$white: #F5F5F5;
+
+$status-success: #52A420;
+$status-warning: #D0CA29;
+$status-failed: #FF5151;
+$status-info: #2DAECA;
+
+
+/* ___ Media Query ___ */
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 770px;
+$M: 995px;
+$L: 1170px;
