@@ -35,14 +35,8 @@
     
     &__img {
         margin-bottom: 5px;
-        max-height: 220px;
-        max-width: 350px;
-        
-        @include MQ($M) {
-            max-height: initial;
-            margin-bottom: 10px;
-            max-width: 100%;
-        }
+        margin-bottom: 10px;
+        width: 100%;
         
         img {
             border-radius: 5px;
@@ -82,14 +76,7 @@
     
     &--secondary {
         padding: 0;
-        
-        @include MQ($M) {
-            width: 48%;
-        }
-        
-        @include MQ($S) {
-            width: 100%;
-        }
+        width: 100%;
         
         .card {
             &__body {
@@ -104,18 +91,10 @@
     
     &.flex--sb {
         align-items: center;
-        height: 300px;
+        height: auto;
         max-width: 100%;
         padding: 0;
-        width: 600px;
-        
-        @include MQ($M) {
-            width: 100%;
-        }
-
-        @include MQ($S) {
-            height: auto;
-        }
+        width: 100%;
         
         .card {
             &__img {
@@ -175,17 +154,7 @@
     &--full {
         height: 300px;
         max-height: 300px;
-        max-width: 350px;
-        width: 350px;
-        
-        @include MQ($M) {
-            max-width: 100%;
-            width: 48%;
-        }
-        
-        @include MQ($XS) {
-            width: 100%;
-        }
+        width: 100%;
         
         &::before {
             background: linear-gradient(180deg, rgba(167, 167, 167, 0) 28.17%, #000000 91%);
@@ -195,13 +164,8 @@
     &--large {
         height: 380px;
         max-height: 380px;
-        max-width: 670px;
-        width: 670px;
-        
-        @include MQ($M) {
-            max-width: 100%;
-            width: 100%;
-        }
+        max-width: 100%;
+        width: 100%;
         
         &::before {
             background: rgba(40, 40, 40, 0.6);

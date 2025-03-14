@@ -5,219 +5,184 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link href="../assets/images/fontawesome-pro-6.1.1-web/css/all.css" rel="stylesheet">
-  <title>Design System</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Meus benefícios</title>
 </head>
-<body class="home">
-  <menu class="menu show-desk">
-    <nav class="menu__container flex--sb wrapper">
-      <a href="/pages/" class="menu__logo"><img src="../assets/images/logos/logo.svg" alt="Raincake" title="Raincake"></a>
+<body>
+  <header>
+    <div class="page flex--sb wrapper">
+      <div class="page__icon flex--ct">
+        <i class='bx bx-user'></i>
+      </div>
       
-      <div class="menu__content flex--end">
-        <ul class="menu__list flex--sb">
-          <li class="menu__item">
-            <a href="/pages/" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item menu__item--dropdown">
-            <a class="menu__link menu__link--dropdown">Quem Somos <i class="fa-sharp fa-solid fa-angle-down"></i></a>
-            <ul id="quem-somos" class="menu__dropdown">
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 1</a>
-              </li>
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 2</a>
-              </li>
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 3</a>
-              </li>
-              <li class="menu__item menu__item--dropdown">
-                <a href="/pages/subitem.html" class="menu__link menu__link--dropdown">Subitem 4 <i class="fa-sharp fa-solid fa-angle-right"></i></a>
-                <ul class="menu__dropdown menu__dropdown--third">
-                  <li class="menu__item">
-                    <a href="/pages/subsub.html" class="menu__link">Sub subitem</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menu__item">
-            <a href="https://www." class="menu__link" target="_blank">Outside link <i class="fa-regular fa-up-right-from-square"></i></a>
-          </li>
-          <li class="menu__item">
-            <a href="/pages/item.html" class="menu__link">Option</a>
-          </li>
-          <li class="menu__item menu__item--dropdown">
-            <a class="menu__link menu__link--dropdown">Option <i class="fa-sharp fa-solid fa-angle-down"></i></a>
-            <ul id="canais" class="menu__dropdown">
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 1</a>
-              </li>
-              <li class="menu__item">
-                <a href="https://www." target="_blank" class="menu__link">Subitem 2 <i class="fa-light fa-arrow-up-right-from-square"></i></a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu__item">
-            <a href="/pages/item.html" class="menu__link">Option</a>
-          </li>
-        </ul>
-        
-        <div class="menu__search flex--st">
-          <input type="text" class="menu__search-input">
-          
-          <a href="#" class="menu__search-btn"><i class="fa-regular fa-magnifying-glass menu__search-glass"></i><i class="fa-light fa-xmark menu__search-close"></i></a>
+      <div class="page__title">
+        <h1>Meus benefícios</h1>
+        <h6>Saldo Cashback</h6>
+      </div>
+      
+      <div class="page__icon flex--ct">
+        <i class='bx bxs-coupon' ></i>
+      </div>
+    </div>
+    
+    <div class="cartao flex--end">
+      <span class="cartao__desc">
+        Total disponível
+      </span>
+      
+      <div class="cartao__valor h2">
+        R$100,00
+      </div>
+      
+      <div class="cartao__action chips">
+        <div class="chips__text small">
+          Comprar com cashback
         </div>
       </div>
-    </nav>
-  </menu>
+    </div>
+  </header>
   
-  <menu id="menu-mobile" class="menu show-tablet">
-    <nav class="menu__container">
-      <div class="menu__header flex--sb wrapper">
-        <div class="menu__burguer"></div>
-        
-        <a href="/pages/" class="menu__logo"><img src="../assets/images/logos/logo.svg" alt="Raincake" title="Raincake"></a>
-        
-        <div class="menu__search flex--st">
-          <input type="text" class="menu__search-input" placeholder="Digite uma palavra chave">
-          <a id="search-mobile" href="#" class="menu__search-btn"><i class="fa-regular fa-magnifying-glass menu__search-glass"></i><i class="fa-light fa-xmark menu__search-close"></i></a>
-        </div>
+  <div class="abas">
+    <div class="abas__topic">
+      <div id="cash" class="abas__topic-item flex--st active">
+        Histórico de cashback
+        <div class="accordion__header-btn"></div>
       </div>
-      
-      <div class="menu__content">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="/pages/" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item menu__item--sub">
-            <a class="menu__link menu__link--sub">Quem Somos</a>
-            <span class="menu__dropdown-open"><i class="fa-light fa-angle-right"></i></span>
-            <ul class="menu__dropdown-content">
-              <i class="fa-regular fa-angle-left menu__dropdown-close"></i>
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 1</a>
-              </li>
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 2</a>
-              </li>
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 3</a>
-              </li>
-              <li class="menu__item menu__item--third">
-                <a href="/pages/subitem.html" class="menu__link menu__link--third">Subitem 4 <i class="fa-light fa-angle-down"></i></a>
+      <div id="use" class="abas__topic-item flex--st">
+        Histórico de uso
+        <div class="accordion__header-btn"></div>
+      </div>
+    </div>
+    
+    <div class="abas__body col-12">
+      <div id="tab-cash" class="abas__body-content active">
+        <ul class="hist">
+          <li class="hist__item hist__item--failed">
+            <div class="hist__item-desc flex--sb">
+              <p>Nome da loja
+                <i class='bx bx-info-circle tooltip'></i>
                 
-                <ul class="menu__dropdown">
-                  <li class="menu__item">
-                    <a href="/pages/subsub.html" class="menu__link">Sub subitem</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                <div class="tooltip__txt" role="tooltip">
+                  Aguardando confirmação
+                  <div class="tooltip__arrow" data-popper-arrow></div>
+                </div>
+              </p>
+              
+              <span>R$0,00</span>
+            </div>
           </li>
-          <li class="menu__item">
-            <a href="https://www." class="menu__link" target="_blank">Outside link <i class="fa-regular fa-up-right-from-square"></i></a>
+          
+          <li class="hist__item hist__item--success">
+            <div class="hist__item-desc flex--sb">
+              <p>Nome da loja</p>
+              <span>R$0,00</span>
+            </div>
           </li>
-          <li class="menu__item">
-            <a href="/pages/item.html" class="menu__link">Option</a>
+          
+          <li class="hist__item hist__item--success">
+            <div class="hist__item-desc flex--sb">
+              <p>Nome da loja</p>
+              <span>R$0,00</span>
+            </div>
           </li>
-          <li class="menu__item menu__item--sub">
-            <a class="menu__link menu__link--sub">Option</a>
-            <span class="menu__dropdown-open"><i class="fa-light fa-angle-right"></i></span>
-            <ul class="menu__dropdown-content">
-              <i class="fa-regular fa-angle-left menu__dropdown-close"></i>
-              <li class="menu__item">
-                <a href="/pages/subitem.html" class="menu__link">Subitem 1</a>
-              </li>
-              <li class="menu__item">
-                <a href="https://www." target="_blank" class="menu__link">Subitem 2 <i class="fa-light fa-arrow-up-right-from-square"></i></a>
-              </li>
-            </ul>
+          
+          <li class="hist__item hist__item--success">
+            <div class="hist__item-desc flex--sb">
+              <p>Nome da loja</p>
+              <span>R$0,00</span>
+            </div>
           </li>
-          <li class="menu__item">
-            <a href="/pages/item.html" class="menu__link">Option</a>
+          
+          <li class="hist__item hist__item--success">
+            <div class="hist__item-desc flex--sb">
+              <p>Nome da loja</p>
+              <span>R$0,00</span>
+            </div>
+          </li>
+          
+          <li class="hist__item hist__item--failed">
+            <div class="hist__item-desc flex--sb">
+              <p>Nome da loja
+                <i class='bx bx-info-circle tooltip'></i>
+              </p>
+              <span>R$0,00</span>
+            </div>
           </li>
         </ul>
       </div>
-    </nav>
-  </menu>
-  
-  <section class="home__cards wrapper">
-    <div class="flex--sb" style="flex-wrap: wrap;" include="../components/cards.html"></div>
-  </section>
-  
-  <section class="home__abas wrapper">
-    <div include="../components/abas.html"></div>
-  </section>
-  
-  <section class="home__accordion wrapper">
-    <div class="accordion__list">
-      <div class="accordion">
-        <div class="accordion__header flex--sb">
-          <div class="accordion__header-title">Lorem ipsum dolor sit amet.</div>
-          <div class="accordion__header-btn"></div>
-        </div>
-        <div class="accordion__body">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, minus? Inventore fugiat maiores neque iste beatae incidunt voluptatibus, accusantium distinctio qui, quaerat rerum tempora laudantium mollitia, velit dignissimos veritatis cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa non odio eos sed quod numquam, in eligendi perspiciatis aspernatur sunt aliquid impedit blanditiis eius corporis quisquam? Possimus, at iure.</p>
-        </div>
-      </div>
       
-      <div class="accordion">
-        <div class="accordion__header flex--sb">
-          <div class="accordion__header-title">Lorem ipsum dolor sit amet.</div>
-          <div class="accordion__header-btn"></div>
-        </div>
-        <div class="accordion__body">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, minus? Inventore fugiat maiores neque iste beatae incidunt voluptatibus, accusantium distinctio qui, quaerat rerum tempora laudantium mollitia, velit dignissimos veritatis cumque.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="accordion__list">
-      <div class="accordion accordion--secondary">
-        <div class="accordion__header flex--sb">
-          <div class="accordion__header-title">Lorem ipsum dolor sit amet.</div>
-          <div class="accordion__header-btn"></div>
-        </div>
-        <div class="accordion__body">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, minus? Inventore fugiat maiores neque iste beatae incidunt voluptatibus, accusantium distinctio qui, quaerat rerum tempora laudantium mollitia, velit dignissimos veritatis cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa non odio eos sed quod numquam, in eligendi perspiciatis aspernatur sunt aliquid impedit blanditiis eius corporis quisquam? Possimus, at iure.</p>
-        </div>
-      </div>
-      
-      <div class="accordion accordion--secondary">
-        <div class="accordion__header flex--sb">
-          <div class="accordion__header-title">Lorem ipsum dolor sit amet.</div>
-          <div class="accordion__header-btn"></div>
-        </div>
-        <div class="accordion__body">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, minus? Inventore fugiat maiores neque iste beatae incidunt voluptatibus, accusantium distinctio qui, quaerat rerum tempora laudantium mollitia, velit dignissimos veritatis cumque.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <div class="cookies cookies--secondary flex--sb">
-    <i class="fa-solid fa-cookie cookies__icon"></i>
-    
-    <div class="cookies__content">
-      <div class="cookies__header flex--sb">
-        <div class="cookies__header-title">Have a cookie</div>
-        <div class="cookies__close"><i class="fa-light fa-xmark"></i></div>
-      </div>
-      
-      <div class="cookies__body">
-        <p>We use cookies to improve your experience. By using our services you're agreeing to the collection of data as described in our <a href="">Cookie Policy</a>.</p>
-        
-        <div class="btn">Got it</div>
+      <div id="tab-use" class="abas__body-content">
+        <ul class="hist">
+          <li class="hist__item hist__item--info">
+            <div class="flex--sb">
+              <div class="hist__item-desc">
+                <p>-R$25,00</p>
+                <span>Nome da loja utilizada</span>
+              </div>
+              <span>25/02/2025</span>
+            </div>
+          </li>
+          
+          <li class="hist__item hist__item--info">
+            <div class="flex--sb">
+              <div class="hist__item-desc">
+                <p>-R$25,00</p>
+                <span>Nome da loja utilizada</span>
+              </div>
+              <span>25/02/2025</span>
+            </div>
+          </li>
+          
+          <li class="hist__item hist__item--info">
+            <div class="flex--sb">
+              <div class="hist__item-desc">
+                <p>-R$25,00</p>
+                <span>Nome da loja utilizada</span>
+              </div>
+              <span>25/02/2025</span>
+            </div>
+          </li>
+          
+          <li class="hist__item hist__item--info">
+            <div class="flex--sb">
+              <div class="hist__item-desc">
+                <p>-R$25,00</p>
+                <span>Nome da loja utilizada</span>
+              </div>
+              <span>25/02/2025</span>
+            </div>
+          </li>
+          
+          <li class="hist__item hist__item--info">
+            <div class="flex--sb">
+              <div class="hist__item-desc">
+                <p>-R$25,00</p>
+                <span>Nome da loja utilizada</span>
+              </div>
+              <span>25/02/2025</span>
+            </div>
+          </li>
+          
+          <li class="hist__item hist__item--info">
+            <div class="flex--sb">
+              <div class="hist__item-desc">
+                <p>-R$25,00</p>
+                <span>Nome da loja utilizada</span>
+              </div>
+              <span>25/02/2025</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
   
   <div include="../components/footer.html"></div>
   
-  <script src="../assets/js/include.js"></script>
-  <script src="../assets/js/cookies.js"></script>
   <script src="../assets/js/menu.js"></script>
-  <script src="../assets/js/abas.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../assets/js/tooltip.js"></script>
   <script src="../assets/js/accordion.js"></script>
+  <script src="../assets/js/abas.js"></script>
 </body>
 </html>

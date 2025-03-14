@@ -1,13 +1,7 @@
 /* ___ Fonts ___ */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@font-face {
-    font-family: 'Margem';
-    src: url(../fonts/variable.woff2) format("woff2-variations");
-    font-weight: 100 750;
-}
-
-$font: 'Margem', 'Roboto', 'Calibri', 'sans-serif';
+$font: 'Inter', 'Roboto', 'Calibri', 'sans-serif';
  
 $thin: 100;
 $light: 300;
@@ -17,17 +11,19 @@ $bold: 750;
 
 
 /* ___ Colors ___ */
-$primary: #997FE3;
-$secondary: #6345BB;
+$primary: #2569ED;
+$secondary: #FFE600;
 $tertiary: #EEE9FF;
+$gradient: linear-gradient(45deg, rgba(58, 116, 233, 0.952) 0%, rgb(28, 136, 236) 27%, rgb(215, 234, 245) 99%, rgba(255,255,255,1) 100%);
 
-$black: #282828;
+$black: #191502;
+$gray-1: #C9C9C9;
+$gray-2: #B3B3B3;
 $white: #F5F5F5;
 
-$status-success: #52A420;
-$status-warning: #D0CA29;
-$status-failed: #FF5151;
-$status-info: #2DAECA;
+$status-success: #00A65059;
+$status-failed: #A6000359;
+$status-info: #2569ED59;
 
 
 /* ___ Media Query ___ */
@@ -37,7 +33,7 @@ $status-info: #2DAECA;
     }
 }
 
-$XS: 500px;
-$S: 770px;
-$M: 995px;
-$L: 1170px;
+$XS: 450px;
+$S: 500px;
+$M: 600px;
+$L: 770px;

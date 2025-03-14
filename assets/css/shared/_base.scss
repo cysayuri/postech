@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: $white;
     color: $black;
     font-family: $font;
     margin: 0;
@@ -28,30 +28,6 @@ body {
     }
 }
 
-.show-desk {
-    display: block;
-    
-    @include MQ($L) {
-        display: none;
-    }
-}
-
-.show-tablet {
-    display: none;
-    
-    @include MQ($L) {
-        display: block;
-    }
-}
-
-.show-mobile {
-    display: none;
-    
-    @include MQ($S) {
-        display: block;
-    }
-}
-
 ::-webkit-scrollbar {
     background: #fff;
     border-radius: 10px;
@@ -65,8 +41,4 @@ body {
 ::-webkit-scrollbar-thumb {
     background: $primary; 
     border-radius: 5px;
-}
-
-.home {
-    padding-top: 150px;
 }

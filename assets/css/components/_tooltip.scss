@@ -1,6 +1,7 @@
 .tooltip {
     padding: 5px;
     width: fit-content;
+    z-index: 0;
     
     &__txt {
         background: #fff;

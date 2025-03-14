@@ -1,86 +1,48 @@
 h1, .h1 {
   font-family: $font;
-  font-size: 89px;
-  font-weight: $bold;
-  line-height: 1.4em;
-  
-  @include MQ($S) {
-    font-size: 30px;
-  }
+  font-size: 18px;
+  font-weight: $medium;
+  line-height: 1.3em;
 }
 
 h2, .h2 {
   font-family: $font;
-  font-size: 67px;
-  font-weight: $bold;
+  font-size: 36px;
+  font-weight: $medium;
   line-height: 1.2em;
-  
-  @include MQ($S) {
-    font-size: 24px;
-  }
 }
 
 h3, .h3 {
   font-family: $font;
-  font-size: 50px;
-  font-weight: $bold;
+  font-size: 16px;
+  font-weight: $medium;
   line-height: 1.2em;
-  
-  @include MQ($S) {
-    font-size: 22px;
-  }
-}
-
-h4, .h4 {
-  font-family: $font;
-  font-size: 37px;
-  font-weight: 600;
-  line-height: 1.2em;
-  
-  @include MQ($S) {
-    font-size: 20px;
-  }
-}
-
-h5, .h5 {
-  font-family: $font;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.2em;
-  
-  @include MQ($S) {
-    font-size: 18px;
-  }
 }
 
 h6, .h6 {
   font-family: $font;
-  font-size: 21px;
+  font-size: 13px;
   font-weight: $regular;
-  line-height: 1.3em;
-  
-  @include MQ($S) {
-    font-size: 16px;
-  }
+  line-height: 1.2em;
 }
 
 p {
   font-family: $font;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $regular;
   line-height: 1.2em;
 }
 
 span {
   font-family: $font;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $regular;
   line-height: 1.2em;
 }
 
 small {
   font-family: $font;
-  font-size: 12px;
-  font-weight: $light;
+  font-size: 8px;
+  font-weight: $regular;
   line-height: 1.2em;
 }

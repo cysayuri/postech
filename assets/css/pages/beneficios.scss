@@ -1,0 +1,58 @@
+header {
+    background: $secondary;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 40px;
+    min-height: 275px;
+    padding: 55px 0 0;
+    position: relative;
+}
+
+.page {
+    align-items: center;
+
+    &__icon {
+        align-items: center;
+        background: #ffffff80;
+        border-radius: 100%;
+        color: $primary;
+        font-size: 18px;
+        height: 47px;
+        width: 47px;
+    }
+
+    &__title {
+        margin: 0 15px;
+        width: 67%;
+
+        h1, h6 {
+            margin: 0;
+        }
+    }
+}
+
+.cartao {
+    background: $gradient;
+    border-radius: 16px;
+    bottom: -30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 285px;
+    padding: 15px 20px;
+    position: absolute;
+    width: 90%;
+
+    span {
+        font-size: 11px;
+        color: #d9d9d9;
+    }
+
+    &__valor {
+        color: $white;
+        font-weight: 500;
+        letter-spacing: .07rem;
+        margin-top: 7px;
+    }
+}
