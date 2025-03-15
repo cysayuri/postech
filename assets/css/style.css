@@ -16,10 +16,12 @@ body {
   background: #F5F5F5;
   color: #191502;
   font-family: "Inter", "Roboto", "Calibri", "sans-serif";
-  margin: 0;
+  margin: 0 auto;
   overflow-x: hidden;
   padding: 0;
   position: relative;
+  max-width: 500px;
+  border: 1px solid #C9C9C9;
 }
 
 .style section {
